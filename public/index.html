@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00b706" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Fuentes</title>
+    <meta name="description" content="Miami me lo confirmó" />
+    <script>
+      if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+        window.location.replace('/miami-me-lo-confirmó.mp4')
+      }
+    </script>
+  </head>
+  <body style="margin: 0; background-color: #00b706">
+    <video src="miami-me-lo-confirmó.mp4" preload autoplay playsinline
+      style="width: 100vw; height: 100vh; object-fit: contain"></video>
+    <script>
+      document.querySelector('video').addEventListener('ended', () => {
+        const fuentes = 'Miami me lo confirmó';
+
+        console.info(fuentes);
+        alert(fuentes);
+      });
+    </script>
+  </body>
+</html>
